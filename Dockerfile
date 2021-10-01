@@ -35,5 +35,4 @@ COPY . .
 EXPOSE 9001
 
 RUN composer install
-RUN npm install
 #ENTRYPOINT ["/tmp/run.sh"]
