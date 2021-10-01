@@ -11,7 +11,7 @@ This project is developed using the following frameworks and tools.
 - Vue.js 2
 - Docker
 
-Time spent on each assignment:
+Time spend on each assignment:
 - **Assignment 1** - 2 hours
 - **Assignment 2** - 30 minutes
 ## Requirements
@@ -34,3 +34,10 @@ Time spent on each assignment:
 9. Run **'composer install'** and wait until complete.
 10. Run **'npm install'** and wait until complete.
 11. In your browser, run http://localhost:8088.
+
+  
+## Folder Location
+
+- Laravel Blade - resources/views
+- Vuejs - resources/js/components
+- Sass - resources/sass
