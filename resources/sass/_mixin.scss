@@ -1,0 +1,17 @@
+//  mixin to print out media queries (based on map keys passed) 
+@mixin respond-to($keys...){
+    @each $key in $keys { 
+        @if $key == handhelds {
+            @media only screen and (max-width: $break-small) { @content; }
+        }
+        @else if $key == medium-screens {
+            @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+        }
+        @else if $key == big-screens {
+            @media only screen and (min-width: $break-large + 1) and (max-width: $break-xlarge - 1) { @content; }
+        }
+        @else if $key == wide-screens {
+            @media only screen and (min-width: $break-xlarge) { @content; }
+        }
+    }
+}
